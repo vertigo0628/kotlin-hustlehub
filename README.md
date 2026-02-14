@@ -102,7 +102,7 @@ HustleHub organizes this economy into a structured, trustworthy platform with:
 - **Navigation**: Compose Navigation
 - **DI**: Hilt (Dagger)
 - **Networking**: Retrofit 2.9.0 + OkHttp 4.12.0
-- **Local DB**: Room 2.6+
+- **Local DB**: Room 2.8+
 - **Image Loading**: Coil 2.x
 - **State Management**: Kotlin Flow + StateFlow
 
