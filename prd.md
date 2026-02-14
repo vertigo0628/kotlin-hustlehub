@@ -6,7 +6,7 @@
 
 **Your Campus Marketplace**
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/yourusername/hustlehub)
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://developer.android.com)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 
