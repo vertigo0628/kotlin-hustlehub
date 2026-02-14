@@ -187,11 +187,10 @@ See [PRD.md](docs/PRD.md) for detailed architecture diagrams and database schema
 
 3. **Configure API Keys**
    
-   Create `local.properties` in the root directory:
+   Copy `keys.properties.template` to `keys.properties` in the project root and add your API keys:
    ```properties
    MAPS_API_KEY=your_google_maps_api_key
    GEMINI_API_KEY=your_gemini_api_key
-   ```
 
 4. **Build and Run**
    ```bash
