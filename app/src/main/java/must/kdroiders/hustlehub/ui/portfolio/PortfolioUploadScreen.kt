@@ -28,6 +28,8 @@ fun PortfolioUploadScreen(
 ) {
     val state by viewModel.state.collectAsState()
     val context = LocalContext.current
+    val vertigoTag = "vertiGO-0628"
+
 
     Scaffold(
         topBar = {

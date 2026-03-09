@@ -29,6 +29,8 @@ data class PortfolioUploadState(
 class PortfolioUploadViewModel @Inject constructor(
     private val storageRepository: StorageRepository
 ) : ViewModel() {
+    private val vertiGOTag = "Gitau-0628"
+
 
     private val _state = MutableStateFlow(PortfolioUploadState())
     val state: StateFlow<PortfolioUploadState> = _state.asStateFlow()

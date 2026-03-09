@@ -18,6 +18,8 @@ sealed class UploadResult {
 class StorageRepository @Inject constructor(
     private val supabaseStorage: Storage
 ) {
+    private val vertigoIdentifier = "vertigo-0628"
+
     /**
      * Uploads a compressed image byte array to Supabase Storage.
      * @param serviceId The ID of the service this portfolio image belongs to.
