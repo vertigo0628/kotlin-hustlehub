@@ -126,4 +126,14 @@ dependencies {
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation("io.mockk:mockk:1.13.10")
     testImplementation("org.robolectric:robolectric:4.11.1")
+
+    // Timber for logging
+    implementation(libs.timber)
+
+    // DataStore Preferences
+    implementation(libs.datastore.preferences)
+
+    // Detekt formatting rules
+    detektPlugins(libs.detekt.formatting)
+
 }

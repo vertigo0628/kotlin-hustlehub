@@ -1,15 +1,12 @@
-package must.kdroiders.hustlehub
+package must.kdroiders.hustlehub.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
-import must.kdroiders.hustlehub.ui.portfolio.PortfolioUploadScreen
+import must.kdroiders.hustlehub.navigation.HustleHubNavGraph
 import must.kdroiders.hustlehub.ui.theme.HustleHubTheme
 
 @AndroidEntryPoint
@@ -19,12 +16,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             HustleHubTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    PortfolioUploadScreen()
-                }
+                val navController = rememberNavController()
+                //SplashScreen()
+                HustleHubNavGraph(navController = navController)
             }
         }
     }
